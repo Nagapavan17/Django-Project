@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+        <h1>Customer Register Page</h1><hr>
+        <div>
+            <div>
+                {%if error%}
+                
+                    <h1>{{error}}</h1>
+                
+                {%endif%}
+            </div>
+            <div style="display: flex;justify-content: center;">
+            <table border="2">
+                <th colspan="2">Customer Register</th>
+                <form method="POST">
+                    {%csrf_token%}
+                    <tr>
+                        <td><label>First Name :</label></td>
+                        <td><input type="text" name="firstname" required></input></td>
+                    </tr>
+                    <tr>
+                        <td> <label>Last Name : </label></td>
+                        <td> <input type="text" name="lastname" required></input></td>
+                    </tr>
+                    <tr>
+                        <td><label >User Name :</label></td>
+                        <td> <input type="text" name="username" required></input></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email :</label></td>
+                        <td><input type="email" name="email" required></input></td>
+                    </tr>
+                    <tr>
+                        <td><label>Password :</label></td>
+                        <td><input type="password" name="password" required></input></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;"><input type="submit" value="Register"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Already have an account <a href="{% url 'login' %}">Login</a></td>
+                    </tr>
+                </form>
+            </table>
+            </div>
+        </div>
+</body>
+</html>

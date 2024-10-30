@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReachAll</title>
+</head>
+<body>
+    <div>
+        <div>
+            <h1>This is home page after login.</h1><hr>
+            <div style="display: flex;justify-content: center;">
+                <table border="1">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>User Name</th>
+                        <th>Email Address</th>
+                    </tr>
+                    {%for i in employees %}
+                    <tr>
+                        <td>{{ i.firstname }}</td>
+                        <td>{{ i.lastname }}</td>
+                        <td>{{ i.username }}</td>
+                        <td>{{ i.email }}s</td>
+                    </tr>
+                    {%endfor%}
+                </table>
+            </div>
+            <p><a href="{% url 'logout1' %}">Logout Employee</a></p>
+            <p><a href="{% url 'logout2' %}">Logout User</a></p> 
+        </div>
+    </div>
+</body>
+</html>

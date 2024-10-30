@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.about-flex{
+                  	padding:30px 10px;
+			display:flex;
+			justify-content:space-between;
+			border-radius:10px;
+		}
+		.about {
+			
+			padding:0px 80px;
+			display:flex; 
+			align-items:center;
+		}
+		.div1 {
+			padding:10px 20px;
+			display:flex;
+		
+		}
+		.div2 {
+			padding:10px 40px;
+			display: flex;
+		}
+		.div3 {
+			display:flex;
+			padding:20px 30px;
+		}
+		.div4 {
+			display:flex;
+			padding:5px 5px;
+			justify-content:space-evenly;
+		}
+		.div5 {
+			display:flex;
+			padding:10px 30px;
+		}
+		.button1 {
+			padding:10px 40px;
+		
+		}
+		.button2 {
+			padding:10px 35px;
+		}
+		
+	</style>
+</head>
+<body>
+	<center><h1>About Page</h1></center><hr>
+
+<!-- Main Div started -->
+	
+	<div class="main-div" style="padding:20px 50px;">
+		<div style="background-color:DodgerBlue; padding:10px;">
+			<nav>
+ 				<button type="button" ><a href="">Home</a></button>
+  				<button type="button" ><a href="{% url 'logistic' %}">About</a></button>
+  				<button type="button" ><a href="{% url 'contact' %}">Contact</a></button>
+  				<button type="button" ><a href="{% url 'index' %}">Index</a></button>
+			</nav>
+		</div>
+
+		<div class="about-flex" style="background-color:rgba(0,100,150,0.2);">
+			<div class="about" >
+				<p ><button style="font-size:15px;padding:8px 40px; background-color:rgba(0,0,0,0.1);cursor:pointer;border-radius:100px;;">Who We 	Are</button><br>
+				<span style="font-size:50px;"><strong>About Us</strong></span><br>
+				<a href=""><strong>HOME > </strong></a>About Us</p>
+			</div>
+			<div >
+				<img src="https://img.freepik.com/premium-photo/motivation-partnership-hands-business-meeting-with-support-team-building-teamwork-						company-workshop-collaboration-community-diversity-with-vision-mission-networking-form-bottom_590464-85210.jpg?w=2000" 							alt="team pic" style=" height:250px; width:450px;padding-right:70px; border-radius:20px 20px;" />	
+			</div>
+            </div>
+
+<!--  2nd div  -->
+            <div class="div1" id="about">
+
+			<div class="theory" style="width:50%;">
+				<h3 style="font-size:20px; color:orange;">Who We Are</h3>
+				<h1>Your Trusted Financial Partners and Advisors</h1>
+				<p>Where your financial peace of mind is our top priority. We are a dedicated team of professionals who   							               provide comprehensive accounting and financial services tailored to meet the unique needs of each of our clients.</p>
+
+				<p>Founded in 1994, Porto has grown into a respected leader in the accounting industry. Our team consists of 									experienced accountants, auditors, tax specialists, and financial advisors who are passionate about helping our clients 						achieve their financial goals.</p>
+			</div>
+
+			<div class="inner" style="align-items:center; width:50%;">
+				<div>
+					
+					<p><strong>Our Mission</strong><br>
+						Our mission is to empower businesses and individuals to achieve financial clarity and success. We are committed to   							providing expert accounting services, strategic financial advice, and personalized support to help our clients navigate 						their financial challenges with confidence. Our goal is to build long-term relationships based on trust, integrity, and 						a deep understanding of each client's unique needs.</p>
+				</div>
+				<div>
+					<p><strong>Our Vision</strong><br>
+						Our vision is to be a leading accounting firm recognized for our commitment to excellence, innovation, and client-  							focused solutions. We strive to set the standard for professional accounting services, continuously adapting to the 							evolving needs of our clients and the changing financial landscape. We aim to be the trusted partner that businesses and 						individuals turn to for reliable guidance and support in their financial journey.</p>
+
+				</div>
+				<div>
+					<p><strong>Our Mission</strong><br>
+						We uphold the highest standards of honesty and ethics in all our dealings. Our clients trust us with their financial 							information, and we honor that trust by delivering accurate, transparent, and reliable services.</p>
+				</div>
+			</div>
+		</div>
+<!--  2nd div ended  -->
+
+<!--  3rd div started  -->
+
+		<div class="div2">
+			<div class="div2-1" style="display:flex;"> 
+                  		<div style="width:20%;" >
+					<img src="https://tse2.mm.bing.net/th?id=OIP._VSU0yNVqjzoW3J4mfhLgwHaHa&pid=Api&P=0&h=220" alt="Global Accounting"  								style="width:80px;" />
+				</div>
+				<div style="width:60%;">
+					<p><strong>Global Accounting</strong><br>
+                                  Expert accounting solutions for businesses worldwide.</p>
+				</div>
+			</div>
+			
+			<div class="div2-2" style="display:flex;" >
+				<div style="width:20%;">
+					<img src="https://tse4.mm.bing.net/th?id=OIP.i-IqhgViKswaHMyCFNf52gHaHa&pid=Api&P=0&h=220" alt="Tax collect"  								 style="width:70px;"/>
+				</div>
+				<div style="width:60%;">
+					<p><strong>Tax Consulting</strong><br>
+                                  Optimize your taxes with expert consulting planning.</p>
+				</div>
+			</div>
+
+			<div class="div2-3" style="display:flex;">
+				<div style="width:20%;">
+					<img src="https://tse3.mm.bing.net/th?id=OIP.O7W9pnncQwhqstIpdRpQLgAAAA&pid=Api&P=0&h=220" alt="Admin Services"  								 style="width:70px;" />
+				</div>
+
+				<div style="width:60%;">
+					<p><strong>Admin Services</strong><br>
+                                  Streamline your operations with our administrative services.</p>
+				</div>
+			</div>
+
+		</div>
+		<!--  3rd div ended  -->
+
+		<!--  4th div started  -->
+		<!--<div class="div3">
+			<div style="float:rignt;">
+				<img src="https://tse3.mm.bing.net/th?id=OIP.H41Xdp5_4KoaoSJKTSWKlAHaHp&pid=Api&P=0&h=220" alt="image" style="width:10%" />
+			</div>
+			<div>
+				<p><strong> Join Us</strong><b> | 1000+ clients globally!</b></p>
+			</div>
+			<div style="align-item:center">
+				<img src="https://tse3.mm.bing.net/th?id=OIP.NGF00h0GhlniQFPlNkh3MgHaE8&pid=Api&P=0&h=220" alt="5 stars" style="width:10%" 					/>
+			</div>
+		</div> -->
+		<!--  4th div ended  -->
+
+		<!--  5th div started  -->
+		<div class="div4">
+			<div>
+				<img src="C:\Users\kanch\OneDrive\Desktop\Training\div5-1.jpg" alt="image-1" style="border-radius:10px;"/>
+				<img src="C:\Users\kanch\OneDrive\Desktop\Training\div5-2.jpg" alt="image-2" style="border-radius:10px;"/>
+			</div>
+			<div>
+				<img src="C:\Users\kanch\OneDrive\Desktop\Training\div5-3.jpg" alt="image-3" style="border-radius:10px;" />
+				<img src="C:\Users\kanch\OneDrive\Desktop\Training\div5-4.jpg" alt="image-4" style="border-radius:10px;" />
+			</div>
+			<div>
+				<img src="C:\Users\kanch\OneDrive\Desktop\Training\div5-5.jpg" alt="image-5" style="border-radius:10px;" />
+				<img src="C:\Users\kanch\OneDrive\Desktop\Training\div5-6.jpg" alt="image-6" style="border-radius:10px;" />
+
+			</div>
+			
+		</div>
+		<!--  5th div ended  -->
+			
+		<!--  6th div started  -->
+		
+		<div class="div5">
+			<div class="text-p1" style="padding:30px 0px;">
+				<button type="button" class="button1"><b>Let’s Work Together</b></button>
+				<h1 style="font-size:50px;">Why Choose Us</h1>
+				<p style="font-size:20px;">Whether you're a small business owner, an individual seeking tax advice, or a multinational corporation, Porto 					is here to support you. Contact us today to schedule a consultation and discover how we can help you achieve financial peace of 					mind.</p>
+				<button type="button" class="button2"><b>Contact Us -></b></button>
+
+			</div>
+
+			<div class="text-p2" id="blog">
+				<div>
+					
+					<p><strong>Expert Team</strong></p>
+						<p>Our expert team of certified accountants brings years of experience and deep industry knowledge to help you navigate 							complex financial landscapes. We’re dedicated to providing personalized, reliable, and results-driven services, 							ensuring your business thrives with our strategic financial guidance.</p>
+				</div>
+
+				<div>
+					<p><strong>Personalized Approach</strong><br>
+						Our personalized approach ensures your unique financial needs are met with tailored solutions. We take the time to 							understand your business, offering dedicated support and customized strategies to help you achieve your financial goals 						and drive long-term success.</p>															</div>
+				<div>
+					<p><strong>Reliable Service</strong><br>
+						Our firm is committed to providing reliable service you can trust. With a focus on accuracy and attention to detail, we  						deliver timely, dependable financial solutions, ensuring peace of mind and helping you make informed decisions to support 						your business's growth and success.</p>															</div>
+				<div>
+					<p><strong>Client-Centric Focus</strong><br>
+						Our client-centric focus means you are always our top priority. We build strong relationships by listening to your needs 						and providing responsive, tailored services. Your success drives our efforts, ensuring that we deliver value and exceed 						your expectations every step of the way.</p>														</div>
+
+			</div>
+		</div> 
+		<!-- Blog site -->
+		
+		<div class="emp" id="team" style="background-color:rgba(200, 0, 0, 0.2);">
+			<div>
+                             <h1 style="text-align: center; font-size:50px; padding:20px 220px;">Meet The Professionals Full Of Expertise and Dedication</h1>
+			</div>
+			<div class="profile" style="display:flex; justify-content:space-evenly; padding:10px 50px;">
+				<div class="p1" style="background-color:rgba(255,255,255,0.4);">
+					<img src="C:\Users\kanch\OneDrive\Desktop\Training\p1.jpg" alt="profile1" style="height:250px; width:250px;"  />
+					<center><h2>MEGHANA K</h2>
+					<p>CEO & Founder</p></center>
+				</div>
+				<div class="p1" style="background-color:rgba(255,255,255,0.4);">
+					<img src="C:\Users\kanch\OneDrive\Desktop\Training\p2.jpg" alt="profile2" style="height:250px; width:250px;" />
+					<center><h2>NAGA PAVAN </h2>
+					<p>Manager</p></center>
+
+				</div>
+				<div class="p1" style="background-color:rgba(255,255,255,0.4);">
+					<img src="C:\Users\kanch\OneDrive\Desktop\Training\p3.jpg" alt="profile3" style="height:250px; width:250px;" />
+					<center><h2>LEELA PADMA</h2>
+					<p>Tech Lead</p></center>
+
+				</div>
+				<div class="p1" style="background-color:rgba(255,255,255,0.4);">
+					<img src="C:\Users\kanch\OneDrive\Desktop\Training\p4.jpg" alt="profile4" style="height:250px; width:250px;" />
+					<center><h2>GOKUL KARTHIK</h2>
+					<p>HR Manager</p></center>
+
+				</div>
+
+			</div>
+			<div style="display:flex;padding:20px 80px; justify-content:space-evenly;">
+				<button type="button" style="background-color:rgba(200, 0, 0, 0.3); padding:2px 15px; cursor:pointer;border-radius:50px;" >WE'RE 							HIRING</button>
+				<p style="text-align:center; padding :0px 220px;">Join our team of dedicated professionals - <a href=" ">Apply Now!</a></P>
+			</div>
+		</div>
+		
+		<div>
+			<div>
+				<h1 style="text-align: center; font-size:50px; padding:0px 100px;">Our Commitment to You</h1>
+				<p style="font-size:18px;text-align:center;padding:0px 180px;">We are more than just your accountants; we are your partners in financial 					success. We work tirelessly to provide solutions that are not only effective but also aligned with your long-term goals. Your 						success is our success. Let's talk about your future.</p>
+			</div>
+			<div style="display:flex; justify-content:space-evenly;">
+				<div s>
+					<p><span style="font-size:50px;text-align:center;"><b>90%</b></span><br>
+						<span style="font-size:20px;"><i>Increased Profitability</i></span><br>
+							Through strategic financial planning and detailed analysis.</p>
+					
+				</div>
+				<div>
+					<p><span style="font-size:50px;"><b>70%</b></span><br>
+						<span style="font-size:20px;"><i>Tax Savings</i></span><br>
+							Saving our clients thousands of dollars each year.</p>
+					
+				</div>
+
+			</div>
+		</div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login Page</h1><hr>
+    <div>
+            <div>
+                <div style="height: 50px;">
+                    {%if error%}
+                    <div >
+                        <center><h1>{{error}}</h1></center>
+                    </div>
+                    {%endif%}
+                </div>
+            </div>
+            <div style="display: flex;justify-content: center;">
+                <table border="2">
+                    <form method="POST" action="login">
+                        {%csrf_token%}
+                        <tr>
+                            <th colspan="2" style="text-align: center;">Login</th>
+                         </tr>
+                        <tr>
+                            <td>User Name</td>
+                            <td><input type="text" name="username" required></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><input type="password" name="password" required></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="submit" value="login"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">New user please create Account <a href="{% url 'emp_register' %}">Register</a></td>
+                        </tr>
+                </form>
+                </table>
+            </div>
+    </div>
+</body>
+</html>

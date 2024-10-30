@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMP Register</title>
+</head>
+<body>
+    <center><h1>Employee Register</h1></center><hr>
+    <div>
+        <div style="height: 50px;">
+            {% if error %}
+             <h1>{{error}}</h1>
+             {%endif%}
+        </div>
+        <form method="POST" action="{% url 'Employee' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <br>
+            <button type="submit">Register</button>
+        </form>
+        <div>
+            <center><h3>Alredy have an Account Login <a href="{% url 'login' %}">Login</a></h3></center>
+        </div>
+    </div>
+</body>
+</html>
